@@ -1,5 +1,5 @@
 """
-WSGI config for automino project.
+WSGI config for autonimo project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
