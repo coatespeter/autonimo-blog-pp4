@@ -1,5 +1,5 @@
 """
-ASGI config for automino project.
+ASGI config for autonimo project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
