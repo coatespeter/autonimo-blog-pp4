@@ -28,24 +28,28 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <span class="navbar-brand text-white">Autonimo Andalucia</span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-brand text-white mx-auto fs-2 me-3">Autonimo Andalucia</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                <a class="nav-link active text-white" href="#">Home
-                    <span class="visually-hidden">(current)</span>
-                </a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">About</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        </nav>
+    </nav>
 
     <main class="flex-shrink-0 main-bg">
 
@@ -56,9 +60,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">Made by Code Instituters</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
+    <footer class="footer mt-auto py-3 bg-primary">
+        <p class="m-0 text-center text-white"> {% block copyright %} Made by Peter D Coates {% endblock copyright %}</p>
+        <p class="m-0 text-center text-white">Follow me: <i class="fab fa-facebook-square ms-3"></i>
             <i class="fab fa-twitter-square ms-3"></i>
             <i class="fab fa-instagram-square ms-3"></i>
             <i class="fab fa-youtube-square ms-3"></i>
