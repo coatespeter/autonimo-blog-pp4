@@ -37,18 +37,13 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="/">Home
+                        <a class="nav-link active text-white" href="/posts">Home
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a
-                            class="nav-link
-                            {% if request.path == about_url %}active{%endif%}"
-                            aria-current="page"
-                            href="{% url 'about' %}"
-                            >About</a
-                        >
+                        <a class="nav-link {% if request.path == about_url %}active text-white{% endif %}" aria-current="page" href="{% url 'about' %}">About</a>
+                    </li>
                         </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Contact</a>
