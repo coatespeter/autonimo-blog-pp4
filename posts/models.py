@@ -21,5 +21,6 @@ class Post(models.Model):
     image = models.ImageField(upload_to='images/')
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=[(0, "Draft"), (1, "Publish")])
+    updated_on = models.DateTimeField(auto_now=True)
     
 
