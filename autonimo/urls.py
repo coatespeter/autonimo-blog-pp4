@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("", include("posts.urls"), name="posts-urls"),
+    path("", include("about.urls")),  # Include about app at the root path
+    path("posts/", include("posts.urls")),  # Include posts app at /posts/
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
 ]
