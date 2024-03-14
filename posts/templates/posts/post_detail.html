@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% block content %}
 {% load static %}
 
 <div class="masthead">
@@ -11,7 +12,18 @@
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static '/images/stock-transportation.jpeg' %}" class="scale" alt="placeholder">
+                {% if post.category == 'transportation' %}
+                    <img src="{% static 'images/default_transportation.jpeg' %}" class="scale" alt="placeholder">
+                {% elif post.category == 'land_management' %}
+                    <img src="{% static '/images/default_land_managment.jpeg' %}" class="scale" alt="placeholder">
+                {% elif post.category == 'swimming_pool_management' %}
+                    <img src="{% static 'images/default_swimming_pool.jpeg' %}" class="scale" alt="placeholder">
+                {% elif post.category == 'handyman' %}
+                    <img src="{% static 'images/default_handyman.jpeg' %}" class="scale" alt="placeholder">
+                {% else %}
+                    <!-- You can specify a default image here if no matching category is found -->
+                    <img src="{% static 'images/default_image.jpeg' %}" class="scale" alt="placeholder">
+                {% endif %}
             </div>
         </div>
     </div>
@@ -19,7 +31,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
+        <div class="col card mb-4 mt-3 left top">
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
