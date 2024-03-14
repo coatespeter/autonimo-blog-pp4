@@ -1,24 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-{% load static %}
 <div class="container mt-5">
-    <div class="row">
-    <div class="col-4 text-center">
-        <img src="{% static '/images/outline.jpeg' %}" width="75%" />
-    </div>
-    <div class="col-8">
-        <!-- Title goes between these h2 tags -->
-        <h2>{{ about.title }}</h2>
-        <!-- Content goes directly underneath this -->
-        {{ about.content | safe }}
-    </div>
-    </div>
-    <div class="row">
-    <div class="col text-right">
-        <!-- Updated on field goes in here -->
-
-        <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
-    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <!-- Title goes here -->
+            <h2>Welcome to Autonimo Andalucia</h2>
+            <!-- Description goes here -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lectus eget odio viverra eleifend. Nam vel condimentum nisi, id convallis nulla. Duis a ex vel justo ullamcorper ultricies. Integer pretium libero vitae suscipit elementum. Morbi euismod eros in quam vehicula, et facilisis nunc varius.</p>
+            <!-- Updated on field goes here -->
+            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
     </div>
 </div>
 {% endblock content %}
