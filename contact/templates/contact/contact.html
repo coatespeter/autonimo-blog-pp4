@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 text-center">
+            <img src="{% static 'images/nobody.jpg' %}" width="75%">
+        </div>
+        <div class="col-12 col-md-8">
+            <h2>{{ contact.title }}</h2>
+            {{ contact.content | safe }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+            <!-- Updated on field goes in here -->
+    
+            <p class="text-end"><em>Updated on: {{ contact.updated_on }}</em></p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 my-5">
+            <h2>Contact us here!</h2>
+            <p>Autonimo Andalucia information goes here!!</p>
+
+            <!-- add your form here. Your submit button should 
+                                have the classes of btn, btn-secondary -->
+        </div>
+    </div>
+</div>
+{% endblock content %}
