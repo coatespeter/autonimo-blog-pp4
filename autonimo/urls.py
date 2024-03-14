@@ -21,5 +21,6 @@ urlpatterns = [
     path("", include("about.urls")),  # Include about app at the root path
     path("posts/", include("posts.urls")),  # Include posts app at /posts/
     path('admin/', admin.site.urls),
+    path("accounts/", include("allauth.urls")),
     path('summernote/', include('django_summernote.urls')),
 ]
