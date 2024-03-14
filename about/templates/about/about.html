@@ -1,16 +1,37 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
 {% block content %}
 <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 text-center">
+        </div>
+        <div class="col-12 col-md-8">
+            <h2>{{ about.title }}</h2>
+            {{ about.content | safe }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+            <!-- Updated on field goes in here -->
+    
+            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
+    </div>
     <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-            <!-- Title goes here -->
+        <div class="col-12 col-md-6 my-5">
             <h2>Welcome to Autonimo Andalucia</h2>
-            <!-- Description goes here -->
             <p>This is a site for self employed workers in Andalucia as well as people searching out various types of workers to do jobs. If this is your first time visiting, please take a moment to register your username in the Register tab above. You will then have the access needed to interact with the job postings in the Home Page. 
                 <p>If you see a job listing you would like to take on, please leave your details in the Comment box of the form.</p>
-                <p>If you would like to add a job listing, please send the details to the admin via the textbox below.</p>
-            <!-- Updated on field goes here -->
-            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+                <p>If you would like to add a job listing, please send a detailed  message in the box below containing all the information.</p>
+
+                <form method="post">
+                    {{ collaborate_form | crispy }}
+                    {% csrf_token %}
+                    <button class="btn btn-secondary"
+                    type="submit">Submit</button>
+                    </form>
         </div>
     </div>
 </div>
