@@ -4,6 +4,15 @@
 
 body {
     background-color: #F9FAFC;
+    font-family: 'Madimi One', sans-serif;
+}
+
+.card-title {
+    color: black; /* Set the font color to black */
+}
+
+.card-text {
+    color: black;
 }
 
 .brand {
