@@ -8,7 +8,8 @@ body {
 }
 
 .card-title {
-    color: black; /* Set the font color to black */
+    color: black; 
+    font-weight:bold;/* Set the font color to black */
 }
 
 .card-text {
