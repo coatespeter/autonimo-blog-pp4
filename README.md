@@ -20,18 +20,54 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 ## Features
 
 - Pagination - The posts are paginated so that the user can view 6 posts per page. There is a link to the next page at the bottom of the page. When the user is not on the first page of listings, there is a link to the previous page.
+  
+![next](static/images/next-pic.png)
+![prev](static/images/prev-pic.png)
 
-- User Registration
-- User Authentication
-- User Authorization
-- Create, Read, Update, and Delete Posts
-- Create, Read, Update, and Delete Comments
-- Draft Posts
-- Comment Approval
-- Search
-- Filter by Category
-- Filter by User
-- Filter by Date
+- Navbar - The navbar is fixed to the top of the page so that the user can easily navigate the site. The navbar contains links to the home page, about page and the login/logout page and register page.
+
+![navbar](static/images/nav-bar.png)
+
+- login status.
+
+![logged in](static/images/logged-in.png)
+![not logged in](static/images/not-logged-in.png)
+
+- About Page
+
+![about](static/images/about-intro.png)
+
+- Register Page
+
+![register](static/images/register.png)
+
+- Login Page
+
+![login](static/images/sign-in.png)
+
+- Logout Page
+
+![logout](static/images/sign-out.png)
+
+- Listings Page
+
+![listings](static/images/listings.png)
+
+- Authentication for comments. 
+
+![auth](static/images/authentication.png)
+
+- Comments box
+
+![comments](static/images/comment-box.png)
+
+- Comment counter
+
+![comment counter](static/images/comment-counter.png)
+
+- Contact admin form
+
+![contact admin](static/images/contact-form.png)
 
 ## Technologies Used
 
