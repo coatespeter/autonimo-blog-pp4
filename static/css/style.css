@@ -1,3 +1,7 @@
+.bg-custom-color {
+    background-color: #44bbbb; /* Hex value for the background color */
+}
+
 body {
     background-color: #F9FAFC;
 }
