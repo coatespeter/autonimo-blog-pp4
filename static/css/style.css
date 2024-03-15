@@ -48,15 +48,6 @@ body {
     position: relative;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #004080; /* Background color of the rectangular banner */
-    border-top-right-radius: 20px; /* Adjust the value to control the roundness of the right edge */
-    border-bottom-right-radius: 20px; /* Adjust the value to control the roundness of the right edge */
-}
 
 .scale {
     width: 100%;
