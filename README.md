@@ -71,7 +71,24 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ## Technologies Used
 
+- HTML - The project uses HTML to create the structure of the site.
+- CSS - The project uses CSS to style the site.
+- JavaScript - JavaScript was used to link the buttons to functionality
+- Python - The project uses Python to create the backend of the site.
+- Django - The project uses Django as the web framework.
+- Heroku - The project is deployed on Heroku.
+- Git - The project uses Git for version control.
+- GitHub - The project uses GitHub to store the code and to plan the project.
+- Postgres - The project uses Postgres as the database.
+- Bootstrap - The project uses Bootstrap to style the site.
+- Google Fonts - The project uses Google Fonts to import the font used in the site.
+- ElephantSQL - The project uses ElephantSQL to host the database.
+- Draw.io - The project uses Draw.io to create the wireframe.
+- Cloudinary - The project uses Cloudinary to host the images.
+
 ## Future Features
+
+- The next feature of the site will likely be a seperate "advertise" page which will contain a form for users to submit their own listings. This will be a feature that will only be available to registered users. It will have inputs for every part of the post and the image upload.
 
 ## Setting up Django
 
