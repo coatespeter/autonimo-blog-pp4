@@ -28,12 +28,12 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ![navbar](static/images/nav-bar.png)
 
-- login status.
+- login status - When site usere are or are not logged in to the site, there is a banner below the buttons which will tell them their status.
 
 ![logged in](static/images/logged-in.png)
 ![not logged in](static/images/not-logged-in.png)
 
-- About Page
+- About Page - On this page, new users can learn what the site is all about and can follow the instructions to make their own account and interact with the listings. 
 
 ![about](static/images/about-intro.png)
 
@@ -49,11 +49,11 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ![logout](static/images/sign-out.png)
 
-- Listings Page
+- Listings Page - On the main listings page, the user can scroll and view a max of 6 listings per page. The user can then click next to see the next page of 6 listings and so on.
 
 ![listings](static/images/listings.png)
 
-- Authentication for comments. 
+- Authentication for comments.
 
 ![auth](static/images/authentication.png)
 
@@ -92,11 +92,32 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ## Setting up Django
 
+- Firstly, I installed all the relevant packages necessary for this site. These were, Django Gunicorn, Psycopg2, Django Heroku, Django Crispy Forms, Pillow, Cloudinary, DJ Database URL, and Whitenoise.
+- I then created a new Django project and app.
+- I migrated the database and created a superuser.
+- I created a Procfile and a requirements.txt file.
+- I created an admin account.
+- I then created the models for the site and migrated the database again.
+- I used Elephantsql to host the database and connected it to the site vis a newly created instance.
+- I linked the database to the site using the DJ Database URL package.
+- I then created the views and urls for the site.
+- I then created the templates for the site.
+- I then created the static files for the site.
+- I then created the forms for the site.
+- I logged into Heroku and created a new app. This app was linked via GitHub to my code base. I was able to deploy early on Heroku and keep an eye out for any bugs during the build process by redeploying the app and making sure everything was working as expected.
+- I added the necessary config vars to Heroku to connect the database and the cloudinary image hosting.
+  
+
 ## Deploying to Heroku
 
-## Setting up the Database
+- Firstly, I created a new app on Heroku.
+- I then connected the app to my GitHub repository.
+- I then added the necessary config vars to Heroku to connect the database and the cloudinary image hosting.
+- In the deploy section, I was able to manually deploy the app and keep an eye out for any bugs during the build process by redeploying the app and making sure everything was working as expected.
 
 ## Testing
+
+### Manual Testing
 
 |        Component     |       Test       |     Expected Result.      |           Actual Result         |
 |----------------------|------------------|---------------------------|---------------------------------|
@@ -124,4 +145,15 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 | Log In Form | Allows user to sign in | User can sign in and gain full functionality of blog | User signed in successfuly when correct credentials supplied |
 | Sign Up Link on Log In Page | Link working | On click brought to sign up page | User brought to log in page once clicked |
 | Sign Out | User can sign out | Sign out successfully and asked to confirm | User could sign out once they confirmed that was their intention|
+
+### Django Testing
+
+![django test](static/images/django-tests.png)
+
+### Automated Testing
+
+![w3](static/images/w3-html-posts.png)
+
+![python linter](static/images/ci-linter-pass.png)
+
 ## Credits
