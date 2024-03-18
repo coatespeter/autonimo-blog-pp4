@@ -1,5 +1,5 @@
 .bg-custom-color {
-    background-color: #44bbbb; /* Hex value for the background color */
+    background-color: #44bbbb !important; /* Ensures override of other styles */
 }
 
 body {
