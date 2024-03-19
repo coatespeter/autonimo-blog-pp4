@@ -148,3 +148,31 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+@media (max-width: 768px) {
+    /* Adjust nav-link display and padding */
+    .navbar-nav .nav-link {
+        display: block; /* Make each link take its own line */
+        padding: 0.5rem 1rem; /* Adjust padding as needed */
+        text-align: center; /* Center-align the text of nav links */
+    }
+
+    /* Ensure navbar collapse is displayed and centers its children */
+    .navbar-collapse {
+        display: flex !important; /* Override Bootstrap's default hiding */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center-align the children */
+    }
+
+    /* Center-align the navbar brand and adjust its size */
+    .navbar-brand {
+        font-size: 1.25rem; /* Optionally adjust font size */
+        text-align: center; /* Ensure text is centered */
+        width: 100%; /* Take full width to ensure center alignment */
+    }
+
+    /* Additional adjustments for navbar itself */
+    .navbar {
+        justify-content: center; /* Center contents */
+    }
+}
