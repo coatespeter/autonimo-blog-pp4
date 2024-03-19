@@ -154,7 +154,7 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 | Email form field | Fill in email in incorrect format | Alert to include @ in email | Alert appeared to include @ for email |
 | Work list display | Click on home | List of blog posts appears as 6 per page | List of work post displayed as 6 per page |
 | Next and Prev Buttons | Work as expected | Next brings to next page, prev brings to previous | Next brought to next page, previous brought to previous list of blog posts |
-| Full blog post display | On click of blog title in blog list full blog display | Full blog post displays | Full blog post displayed |
+| Full Listing display | On click of listing title in blog list full listing display | Full listing displays | Full listing displayed |
 | Comment Counter | Scroll to comment section | Shows users a small graphic with number of comments | Displays correctly |
 | Log in Prompt | To display when not log in | Message display in like and comment to prompt a log in | Messaged displayed to visitor to log in to interact with post |
 | Like Log in Prompt Link Working | Link to sign in page working | User brought to sign in page when clicked | User is brought to log in page when link |
