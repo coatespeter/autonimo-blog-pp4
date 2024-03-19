@@ -2,6 +2,31 @@
 
 Autonimo Andalucia is a job posting website designed to be used by self-employed (Autónomos) people. It currently has listings in four different categories: Land Management, Swimming Pool Maintenance, Transportation, and Handyman Work. It allows users to register and interact with job postings.
 
+## Table of Contents
+
+- [Autonimo Andalucia](#autonimo-andalucia)
+  - [Table of Contents](#table-of-contents)
+  - [Wireframes](#wireframes)
+  - [Post and Comment Relationship Diagram](#post-and-comment-relationship-diagram)
+  - [User Stories](#user-stories)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Future Features](#future-features)
+  - [Setting up Django](#setting-up-django)
+  - [Deploying to Heroku](#deploying-to-heroku)
+  - [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [Django Testing](#django-testing)
+    - [Automated Testing](#automated-testing)
+  - [Credits](#credits)
+
+## Wireframes
+
+- At the beginning of the project, I made up some rough wireframes to give me an idea of what I wanted the site to look like. I used draw.io to create these wireframes. I made a wireframe for the home page and the about page.
+
+![home](static/images/wireframe1.png)
+![about](static/images/wireframe2.png)
+
 ## Post and Comment Relationship Diagram
 
 ![post and comment relationship model](static/images/post:comment_relationship.png)
