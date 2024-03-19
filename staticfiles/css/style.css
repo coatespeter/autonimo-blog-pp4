@@ -1,5 +1,15 @@
 body {
     background-color: #F9FAFC;
+    font-family: 'Madimi One', sans-serif;
+}
+
+.card-title {
+    color: black; 
+    font-weight:bold;/* Set the font color to black */
+}
+
+.card-text {
+    color: black;
 }
 
 .brand {
@@ -7,10 +17,6 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
-}
-
-.red-o {
-    color: #E84610;
 }
 
 .thin {
@@ -38,15 +44,6 @@ body {
     position: relative;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #004080; /* Background color of the rectangular banner */
-    border-top-right-radius: 20px; /* Adjust the value to control the roundness of the right edge */
-    border-bottom-right-radius: 20px; /* Adjust the value to control the roundness of the right edge */
-}
 
 .scale {
     width: 100%;
@@ -69,7 +66,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #36454F;
     color: white;
     position: relative;
 }
@@ -79,23 +76,9 @@ body {
     overflow: hidden;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #5f9fa0;
 }
 
 .post-link:hover,
@@ -160,4 +143,32 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+@media (max-width: 768px) {
+    /* Adjust nav-link display and padding */
+    .navbar-nav .nav-link {
+        display: block; /* Make each link take its own line */
+        padding: 0.5rem 1rem; /* Adjust padding as needed */
+        text-align: center; /* Center-align the text of nav links */
+    }
+
+    /* Ensure navbar collapse is displayed and centers its children */
+    .navbar-collapse {
+        display: flex !important; /* Override Bootstrap's default hiding */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center-align the children */
+    }
+
+    /* Center-align the navbar brand and adjust its size */
+    .navbar-brand {
+        font-size: 1.25rem; /* Optionally adjust font size */
+        text-align: center; /* Ensure text is centered */
+        width: 100%; /* Take full width to ensure center alignment */
+    }
+
+    /* Additional adjustments for navbar itself */
+    .navbar {
+        justify-content: center; /* Center contents */
+    }
 }
