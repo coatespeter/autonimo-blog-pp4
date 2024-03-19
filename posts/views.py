@@ -6,11 +6,21 @@ from .models import Post, Comment
 from .forms import CommentForm
 
 class PostList(generic.ListView):
+    """
+    A view that inherits from Django's generic ListView to display a list of published posts.
+    It uses a specific queryset to filter posts by their 'status' to show only published posts.
+    The view paginates the posts to show a limited number per page.
+    """
     queryset = Post.objects.filter(status=1)
     template_name = "posts/index.html"
     paginate_by = 6
 
 def post_detail(request, slug):
+    """
+    View function for displaying the detail of a single post, identified by its 'slug'.
+    It includes displaying approved comments associated with the post and a form for submitting new comments.
+    Submitted comments are saved with the status awaiting approval.
+    """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-created_on")
@@ -45,7 +55,8 @@ def post_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    view to edit comments
+    View function to edit an existing comment. It checks if the comment author is the same as the request user.
+    If valid, the comment is updated and set as unapproved. An error message is displayed if the update is invalid.
     """
     if request.method == "POST":
 
@@ -67,7 +78,8 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    view to delete comment
+    View function to delete a comment. It verifies that the comment author is the request user before deletion.
+    Success or error messages are displayed based on whether the user has permission to delete the comment.
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)

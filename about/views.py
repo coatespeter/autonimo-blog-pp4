@@ -5,6 +5,11 @@ from .forms import CollaborateForm
 
 
 def about_me(request):
+    
+    """
+    View function for the 'About Me' page. Handles displaying the 'About' content and processing
+    collaboration requests submitted through the 'CollaborateForm'.
+    """
 
     if request.method == "POST":
         collaborate_form = CollaborateForm(data=request.POST)

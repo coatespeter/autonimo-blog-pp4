@@ -4,6 +4,10 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
+        """
+        Admin class for the Post model. It configures the list display, search fields, filters,
+        slug prepopulation, and integrates Summernote for the content field in the Django Admin interface.
+        """
 
         list_display = ('title', 'slug', 'status', 'created_on')
         search_fields = ['title', 'content']

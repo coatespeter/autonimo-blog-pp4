@@ -4,10 +4,13 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
-
-
 class Post(models.Model):
+    """
+    Model representing a blog post. Each post has a title, category, slug, featured image,
+    author, excerpt, content, creation date, status, and update date. The 'category' field
+    allows for categorization of posts into predefined choices. The 'status' field indicates
+    whether the post is a draft or published.
+    """
 
     CATEGORY_CHOICES = [
         ('transportation', 'Transportation'),
@@ -35,8 +38,8 @@ class Post(models.Model):
     def __str__(self):
         return f"{self.title} | written by {self.author}"
 
-
 class Comment(models.Model):
+    
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments'
         )
@@ -44,7 +47,10 @@ class Comment(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
-
+    """
+    Model representing a comment made on a blog post. Comments are linked to both the blog post
+    they belong to ('post') and the author ('author') who made the comment.
+    """
     class Meta:
         ordering = ['created_on']
 
