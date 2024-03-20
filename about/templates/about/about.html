@@ -4,31 +4,33 @@
 
 {% block content %}
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-12 col-md-4 text-center">
-        </div>
-        <div class="col-12 col-md-8">
+    <!-- Hero Section -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+            <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                <div class="col-md-12 px-0">
+                    <h1 class="display-4 fst-italic">Welcome to Autonimo Andalucia</h1>
+                    <p class="lead my-3">A site for Self-Employed people in the Costa Del Sol to list their services and for people to find the services they need.</p>
+                    <p class="lead mb-0"><a href="#" class="text-white fw-bold">Register</a> above and view the work posts via the Home button.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col text-right">
-            <!-- Updated on field goes in here -->
-    
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-6 my-5">
-            <h2>Welcome to Autonimo Andalucia</h2>
-            <p>A site for autonimos to list their services and for people to find the services they need.</p> 
-                <p>Register above and view the work posts via the Home button.</p>
-                <p>If you would like to add a job listing, please send admin a message via the form below.</p>
 
-                <form method="post">
-                    {{ collaborate_form | crispy }}
-                    {% csrf_token %}
-                    <button class="btn btn-secondary"
-                    type="submit" style="background-color: #188181;">Submit</button>
+    <!-- Form Section -->
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Add a Job Listing</h5>
+                    <p class="card-text">If you would like to add a job listing, please send admin a message via the form below.</p>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ collaborate_form | crispy }}
+                        <button class="btn btn-secondary" type="submit">Submit</button>
                     </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
