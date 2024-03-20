@@ -19,6 +19,10 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
     - [Django Testing](#django-testing)
     - [Automated Testing](#automated-testing)
   - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Libraries \& Frameworks](#libraries--frameworks)
+    - [Acknowledgements](#acknowledgements)
 
 ## Wireframes
 
@@ -179,6 +183,26 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ![w3](static/images/w3-html-posts.png)
 
+![w3](static/images/w3-2.png)
+
 ![python linter](static/images/ci-linter-pass.png)
 
 ## Credits
+
+### Content
+
+- The content for this site was inspired by the Code Institute Django project "I think therefore I blog"
+- I used some Django educational material for some help with the setup of a Django based site. https://www.youtube.com/watch?v=oU9kN13-Xbs&t=269s
+
+### Media
+
+- The images used in this site were obtained from Unsplash. https://unsplash.com/
+- Font - The font I used called Madini One was obtained from Google Fonts. https://fonts.google.com/
+- Data storage - The data for this site is managed using ElephantSQL. https://www.elephantsql.com/
+
+### Libraries & Frameworks
+
+- The site uses the Django web framework. https://www.djangoproject.com/
+- The site uses the Bootstrap framework. https://getbootstrap.com/
+
+### Acknowledgements
