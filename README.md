@@ -102,6 +102,17 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ![contact admin](static/images/contact-form.png)
 
+- Default image for listings - If a listing does not have a picture, a default image will be displayed.
+
+![default image](static/images/default-img.png)
+
+- Category images - Each category has its own image to represent it. By selecting the category when a post is being created, the listing image will appear as a default for the category.
+
+![category images](static/images/category1.png)
+![category images](static/images/category2.png)
+![category images](static/images/category3.png)
+![category images](static/images/catgegory4.png)
+
 ## Technologies Used
 
 - HTML - The project uses HTML to create the structure of the site.
