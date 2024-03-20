@@ -16,6 +16,7 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
   - [Deploying to Heroku](#deploying-to-heroku)
   - [Testing](#testing)
     - [Manual Testing](#manual-testing)
+  - [Bugs](#bugs)
     - [Django Testing](#django-testing)
     - [Automated Testing](#automated-testing)
   - [Credits](#credits)
@@ -174,6 +175,24 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 | Log In Form | Allows user to sign in | User can sign in and gain full functionality of blog | User signed in successfuly when correct credentials supplied |
 | Sign Up Link on Log In Page | Link working | On click brought to sign up page | User brought to log in page once clicked |
 | Sign Out | User can sign out | Sign out successfully and asked to confirm | User could sign out once they confirmed that was their intention|
+
+## Bugs
+
+![bugs](static/images/message-bug.png)
+
+- I had a but where the user, upon recieving a message, would recieve a message not displaying with a contrast and was therefore, extremely difficult to read. This was fixed by adding the message tag seen below:
+
+![code fix](static/images/comment-green-fix1.png)
+
+![message tag](static/images/message-tag.png)
+
+![message fix](static/images/comment-green.png)
+
+- I had a bug where the deployed site, header and footer were not displaying the correct background color, therefore making the text impossible to read. I fixed this by altering the css, implementing a color via bootstrap and collecting the static files again.
+
+- While testing the site. I found that there were contrast errors I was unaware of during the development process. I discovered this through a Wave report. I fix this by changing the color scheme of the site to be more readable and inclusive.
+
+![wave](static/images/wave.png)
 
 ### Django Testing
 
