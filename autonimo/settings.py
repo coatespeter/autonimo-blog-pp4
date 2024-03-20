@@ -33,7 +33,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'autonimo-662c76ca9bdc.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [

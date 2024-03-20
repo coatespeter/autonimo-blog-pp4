@@ -2,8 +2,9 @@
 
 Autonimo Andalucia is a job posting website designed to be used by self-employed (Autónomos) people. It currently has listings in four different categories: Land Management, Swimming Pool Maintenance, Transportation, and Handyman Work. It allows users to register and interact with job postings.
 
-- Link to deployed site - https://autonimo-662c76ca9bdc.herokuapp.com/
-- Link to GitHub repository - https://github.com/coatespeter/autonimo-blog-pp4 
+- Link to deployed site - [https://autonimo-662c76ca9bdc.herokuapp.com/](https://autonimo-662c76ca9bdc.herokuapp.com/)
+- Link to GitHub repository - [https://github.com/coatespeter/autonimo-blog-pp4](https://github.com/coatespeter/autonimo-blog-pp4)
+
 
 ## Table of Contents
 
@@ -213,18 +214,24 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ### Content
 
-- The content for this site was inspired by the Code Institute Django project "I think therefore I blog"
-- I used some Django educational material for some help with the setup of a Django based site. https://www.youtube.com/watch?v=oU9kN13-Xbs&t=269s
+- The content for this site was inspired by the Code Institute Django project "I think therefore I blog".
+- I used some Django educational material for some help with the setup of a Django-based site. [Django Tutorial](https://www.youtube.com/watch?v=oU9kN13-Xbs&t=269s)
 
 ### Media
 
-- The images used in this site were obtained from Unsplash. https://unsplash.com/
-- Font - The font I used called Madini One was obtained from Google Fonts. https://fonts.google.com/
-- Data storage - The data for this site is managed using ElephantSQL. https://www.elephantsql.com/
+- The images used in this site were obtained from [Unsplash](https://unsplash.com/).
+- Font - The font I used called Madina One was obtained from [Google Fonts](https://fonts.google.com/).
+- Data storage - The data for this site is managed using [ElephantSQL](https://www.elephantsql.com/).
 
 ### Libraries & Frameworks
 
-- The site uses the Django web framework. https://www.djangoproject.com/
-- The site uses the Bootstrap framework. https://getbootstrap.com/
+- The site uses the [Django web framework](https://www.djangoproject.com/).
+- The site uses the [Bootstrap framework](https://getbootstrap.com/).
 
 ### Acknowledgements
+
+- I would like to thank my mentor Luke Buchanan for his help and guidance throughout the project.
+
+- I would also like to thank my wife Philippa for her unwavering support and encouragement throughout the project.
+
+- I would like to thank the Code Institute for the educational material and and support throughout the project.
