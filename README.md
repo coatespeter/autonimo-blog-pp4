@@ -2,6 +2,9 @@
 
 Autonimo Andalucia is a job posting website designed to be used by self-employed (Autónomos) people. It currently has listings in four different categories: Land Management, Swimming Pool Maintenance, Transportation, and Handyman Work. It allows users to register and interact with job postings.
 
+- Link to deployed site - https://autonimo-662c76ca9bdc.herokuapp.com/
+- Link to GitHub repository - https://github.com/coatespeter/autonimo-blog-pp4 
+
 ## Table of Contents
 
 - [Autonimo Andalucia](#autonimo-andalucia)
