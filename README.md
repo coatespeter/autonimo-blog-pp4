@@ -5,7 +5,6 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 - Link to deployed site - [https://autonimo-662c76ca9bdc.herokuapp.com/](https://autonimo-662c76ca9bdc.herokuapp.com/)
 - Link to GitHub repository - [https://github.com/coatespeter/autonimo-blog-pp4](https://github.com/coatespeter/autonimo-blog-pp4)
 
-
 ## Table of Contents
 
 - [Autonimo Andalucia](#autonimo-andalucia)
@@ -67,7 +66,7 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 ![logged in](static/images/logged-in.png)
 ![not logged in](static/images/not-logged-in.png)
 
-- About Page - On this page, new users can learn what the site is all about and can follow the instructions to make their own account and interact with the listings. 
+- About Page - On this page, new users can learn what the site is all about and can follow the instructions to make their own account and interact with the listings.
 
 ![about](static/images/about-intro.png)
 
@@ -141,7 +140,6 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 - I logged into Heroku and created a new app. This app was linked via GitHub to my code base. I was able to deploy early on Heroku and keep an eye out for any bugs during the build process by redeploying the app and making sure everything was working as expected.
 - I added the necessary config vars to Heroku to connect the database and the cloudinary image hosting.
   
-
 ## Deploying to Heroku
 
 - Firstly, I created a new app on Heroku.
