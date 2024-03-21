@@ -37,7 +37,13 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 ## Post and Comment Relationship Diagram
 
+- Initial plan
+
 ![post and comment relationship model](static/images/post:comment_relationship.png)
+
+![post model](static/images/post-model.png)
+
+![comment model](static/images/comment-model.png)
 
 ## User Stories
 
@@ -207,7 +213,8 @@ Autonimo Andalucia is a job posting website designed to be used by self-employed
 
 - While testing the responsiveness of the site, I encountered a bug on the about page where a div was spilling over its parent. I attempted various fixes but found that wrapping the form in a container div resolved the responsiveness issue. However, this introduced another bug where the form would not submit correctly. Ultimately, I resolved the issue by wrapping the entire about page content in a container. This not only fixed the responsiveness of the page but also resolved the form submission problem.
 
-![overspill](static/images/overspill.png)
+![overspill](static/images/overspill.png
+)
 ![overspill-fix](static/images/overspill-fix.png)
 
 ![wave](static/images/wave.png)
